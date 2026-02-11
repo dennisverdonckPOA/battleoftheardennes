@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U14 Battle of the Ardennes 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+        body { font-family: 'Roboto', sans-serif; background-color: #f8fafc; }
+        .title-font { font-family: 'Bebas Neue', cursive; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.2s ease-in; }
+        .nav-active { background-color: #facc15 !important; color: #1e3a8a !important; border-bottom: 4px solid #1e3a8a; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="pb-24">
+
+    <header class="bg-blue-900 text-white p-6 shadow-2xl sticky top-0 z-50 border-b-4 border-orange-500">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-4xl title-font tracking-widest leading-none">Battle of the Ardennes</h1>
+                <p class="text-[10px] uppercase tracking-[0.2em] font-bold text-yellow-400">U14 Profondeville • 16-17 Mei 2026</p>
+            </div>
+            <i class="fas fa-basketball-ball text-3xl text-orange-500"></i>
+        </div>
+    </header>
+
+    <nav class="bg-blue-800 sticky top-[88px] z-40 flex overflow-x-auto no-scrollbar shadow-xl">
+        <button onclick="showTab('plan', this)" class="nav-btn nav-active px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all border-r border-blue-700">Planning</button>
+        <button onclick="showTab('loc', this)" class="nav-btn px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all border-r border-blue-700 text-white">Locaties</button>
+        <button onclick="showTab('food', this)" class="nav-btn px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all border-r border-blue-700 text-white">Eten/Frituur</button>
+        <button onclick="showTab('wie', this)" class="nav-btn px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all border-r border-blue-700 text-white">Ploegen</button>
+        <button onclick="showTab('fin', this)" class="nav-btn px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all border-r border-blue-700 text-white font-bold">Financieel</button>
+        <button onclick="showTab('pack', this)" class="nav-btn px-6 py-4 text-xs font-bold uppercase flex-shrink-0 transition-all text-white italic">Inpaklijst ✅</button>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-4">
+
+        <section id="plan" class="tab-content active space-y-4">
+            <h2 class="text-2xl title-font text-blue-900 border-b-2 border-yellow-400 inline-block mb-2">Weekend Flow</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-xl shadow border-l-8 border-slate-400">
+                    <h3 class="font-bold text-slate-800 uppercase text-sm mb-2">Vrijdag 15 Mei</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">• Ouders naar de ALDI (Fosses-la-Ville)<br>• Aankomst schooltje Suarlée (vanaf 17u)<br>• Spaghetti koken & 3kg macaroni koken voor zaterdag<br>• Keuze frituur snacks registreren<br>• Avondwandeling (Komoot) of gezelschapspelletjes</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border-l-8 border-orange-500">
+                    <h3 class="font-bold text-orange-600 uppercase text-sm mb-2">Zaterdag 16 Mei</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">• Ontbijt (40 eieren) in schooltje<br>• Toernooi Profondeville<br>• 11u: Ouder haalt pastasalade uit ijskast schooltje<br>• Ouder geeft frituurbestelling door bij Gilbert<br>• Douchen internaat, daarna eten & QUIZ in schooltje</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border-l-8 border-blue-600">
+                    <h3 class="font-bold text-blue-600 uppercase text-sm mb-2">Zondag 17 Mei</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">• Alles inpakken & schooltje Suarlée volledig leegmaken<br>• Ontbijt + Wraps rollen voor middaglunch<br>• Finales & Prijsuitreiking<br>• Gezamenlijke opkuis keuken en schooltje</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="loc" class="tab-content space-y-4">
+            <h2 class="text-2xl title-font text-blue-900">Locaties</h2>
+            <div class="grid gap-3">
+                <div class="bg-white p-4 rounded-lg shadow flex justify-between items-center border-b-4 border-orange-500">
+                    <div><h3 class="font-bold text-sm">SPORTHAL TOERNOOI</h3><p class="text-[10px] text-slate-500">Avenue Roquebrune Cap Martin 27/43, 5170 Profondeville</p></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Avenue+Roquebrune+Cap+Martin+27%2F43%2C+5170+Profondeville" target="_blank" class="bg-blue-600 text-white p-3 rounded-full"><i class="fas fa-location-arrow"></i></a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow flex justify-between items-center border-b-4 border-blue-500">
+                    <div><h3 class="font-bold text-sm">SCHOOLTJE SUARLÉE</h3><p class="text-[10px] text-slate-500">Rue Maria de Dorlodot 21, 5020 Suarlée - Namur</p></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rue+Maria+de+Dorlodot+21%2C+5020+Suarl%C3%A9e+-+Namur" target="_blank" class="bg-blue-600 text-white p-3 rounded-full"><i class="fas fa-location-arrow"></i></a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow flex justify-between items-center border-b-4 border-purple-500">
+                    <div><h3 class="font-bold text-sm">INTERNAAT GODINNE</h3><p class="text-[10px] text-slate-500">Carrefour de I’Europe, 3 5530 Godinne</p></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Carrefour+de+l%E2%80%99Europe%2C+3+5530+Godinne" target="_blank" class="bg-blue-600 text-white p-3 rounded-full"><i class="fas fa-bed"></i></a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow flex justify-between items-center border-b-4 border-blue-400">
+                    <div><h3 class="font-bold text-sm">ALDI FOSSES-LA-VILLE</h3><p class="text-[10px] text-slate-500">Av. Albert 1er 79, 5070 Fosses-la-Ville</p></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Albert+1er+79%2C+5070+Fosses-la-Ville" target="_blank" class="bg-blue-600 text-white p-3 rounded-full"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="bg-red-100 p-4 rounded-lg border-2 border-red-300 mt-4">
+                <h3 class="text-red-700 font-bold text-sm mb-1 uppercase italic">Spoed (Hospital Mont-Godinne)</h3>
+                <p class="text-[11px]">Rue Dr Gaston Therasse 1, 5530 Yvoir</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rue+Dr+Gaston+Therasse+1%2C+5530+Yvoir" target="_blank" class="text-blue-700 text-xs underline font-bold">Navigeer nu</a>
+            </div>
+        </section>
+
+        <section id="food" class="tab-content space-y-4">
+            <h2 class="text-2xl title-font text-blue-900">Chez Gilbert - Volledige Kaart</h2>
+            <div class="bg-yellow-50 p-4 border-2 border-yellow-300 rounded-xl space-y-2">
+                <details class="bg-white p-3 rounded shadow" open>
+                    <summary class="font-bold cursor-pointer text-sm">🍔 Mike Burger Serie</summary>
+                    <div class="text-[11px] pt-3 space-y-2">
+                        <p><b>Mini/Big/Triple Mike:</b> Cheddar, spek, giantsaus.</p>
+                        <p><b>Cheesy Mike:</b> Dubbele kaas, kaassaus, augurk.</p>
+                        <p><b>Caro Chic:</b> Kipburger, kipsaus.</p>
+                        <p><b>Petit Italien:</b> Pesto, mozzarella, rucola.</p>
+                        <p><b>Petit Rom:</b> Baconsaus, gebakken ui, spek.</p>
+                        <p><b>Petit Western:</b> Spiegelei, ui, spek, chef saus.</p>
+                        <p><b>Big Pepper:</b> 2 burgers, peperbrood, pepersaus.</p>
+                    </div>
+                </details>
+                <details class="bg-white p-3 rounded shadow">
+                    <summary class="font-bold cursor-pointer text-sm">🍢 Alle Snacks & Gerechten</summary>
+                    <div class="text-[11px] pt-3 grid grid-cols-2 gap-2 italic">
+                        <span>• Pitta / Pitta Royal</span><span>• Vol-au-vent</span>
+                        <span>• Vlaamse stoverij</span><span>• Halve kip</span>
+                        <span>• Balletjes Luiks/Tomaat</span><span>• Kaaskroket</span>
+                        <span>• Garnaalkroket</span><span>• Duo kroketten</span>
+                        <span>• Calamares / Scampi's</span><span>• Mexicano / Frikandel</span>
+                        <span>• Alle Brochettes (4 soorten)</span>
+                    </div>
+                </details>
+                <div class="bg-orange-100 p-3 rounded border-2 border-orange-300 text-[11px]">
+                    <p class="font-bold uppercase text-orange-800">🎁 Kinderbox</p>
+                    <p>Frietjes + Verrassing + Keuze: Rund, Kipfingers, Frikandel, Hamburger of Nuggets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wie" class="tab-content space-y-4">
+            <h2 class="text-2xl title-font text-blue-900">Teams</h2>
+            <div class="bg-white p-5 rounded-xl shadow border-t-8 border-orange-500">
+                <h3 class="text-xs font-bold text-slate-400 mb-3 uppercase">De 11 Spelers:</h3>
+                <div class="grid grid-cols-2 gap-y-3 text-sm font-bold text-slate-700 uppercase">
+                    <p>🏀 Lukas</p><p>🏀 Stef</p><p>🏀 Kobe</p><p>🏀 Arno</p>
+                    <p>🏀 Vic</p><p>🏀 Sepp</p><p>🏀 Arjen</p><p>🏀 Jonas</p>
+                    <p>🏀 Iebe</p><p>🏀 Dean</p><p>🏀 Mira</p>
+                </div>
+            </div>
+            <div class="bg-slate-800 text-white p-5 rounded-xl shadow border-t-8 border-blue-500">
+                <h3 class="text-xs font-bold text-blue-300 mb-3 uppercase tracking-widest">Tegenstanders:</h3>
+                <ul class="text-[11px] space-y-2 leading-relaxed font-bold italic">
+                    <li>• Sharks Profondeville</li>
+                    <li>• Space High Elite (GER/US)</li>
+                    <li>• SVO Utrecht (HOL)</li>
+                    <li>• Smooth Handles (GER/US)</li>
+                    <li>• G&V Waregem</li>
+                    <li>• BBC Schelle</li>
+                    <li>• Gems Diepenbeek (U14)</li>
+                    <li>• Musketiers Wommelgem (U14)</li>
+                    <li>• Kaiserslautern Thunderbolts (GER/US) (U14/U16)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fin" class="tab-content space-y-4">
+            <h2 class="text-2xl title-font text-blue-900">Financieel</h2>
+            <div class="bg-green-600 text-white p-6 rounded-2xl shadow-lg text-center">
+                <p class="text-xs uppercase font-bold opacity-80 mb-1">Totaalsom</p>
+                <h3 class="text-5xl font-black">€ 1.822</h3>
+            </div>
+            <div class="space-y-2 font-bold">
+                <div class="bg-white p-4 rounded shadow flex justify-between border-l-4 border-green-500"><span>Speler</span><span>€ 100</span></div>
+                <div class="bg-white p-4 rounded shadow flex justify-between border-l-4 border-green-500"><span>Volwassene (Slaap)</span><span>€ 70</span></div>
+                <div class="bg-white p-4 rounded shadow flex justify-between border-l-4 border-slate-300 text-slate-400"><span>Enkel eten/drinken</span><span>€ 23</span></div>
+            </div>
+        </section>
+
+        <section id="pack" class="tab-content space-y-4">
+            <h2 class="text-2xl title-font text-blue-900 italic uppercase">Volledige Inpaklijst ✅</h2>
+            <div class="bg-white rounded-xl shadow p-5 space-y-3">
+                <p class="text-[10px] font-bold text-blue-800 uppercase bg-blue-100 p-1">Algemene Groepszaken</p>
+                <label class="flex items-center space-x-3 text-xs font-bold text-red-600"><input type="checkbox" class="h-5 w-5"><span>2X BASKETTENUES!!!!!!!</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>EHBO-kit & Ijszakken</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Dafalgan</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Kopie ID's kids (ouders niet in internaat)</span></label>
+
+                <p class="text-[10px] font-bold text-blue-800 uppercase bg-blue-100 p-1 mt-4">Persoonlijk - Slapen & Kledij</p>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Slaapzak</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Kussen & Kussensloop</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Pyjama</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Kledij tegen de regen</span></label>
+                
+                <p class="text-[10px] font-bold text-blue-800 uppercase bg-blue-100 p-1 mt-4">Hygiëne & Verzorging</p>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Douchegerief & Handdoek</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Toiletartikelen (Tandenborstel/Pasta)</span></label>
+                <label class="flex items-center space-x-3 text-xs font-bold"><input type="checkbox" class="h-5 w-5"><span>WC-rol</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Deo & Zonnecreme?</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Persoonlijke medicatie</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Slippers</span></label>
+
+                <p class="text-[10px] font-bold text-blue-800 uppercase bg-blue-100 p-1 mt-4">Documenten & Electronica</p>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>ID-kaart</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Drinkbus</span></label>
+                <label class="flex items-center space-x-3 text-xs"><input type="checkbox" class="h-5 w-5"><span>Opladers GSM</span></label>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 text-[10px] text-center font-bold tracking-widest border-t border-yellow-400 z-50">
+        16 - 17 MEI 2026 • PROFONDEVILLE
+    </footer>
+
+    <script>
+        function showTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(b => { b.classList.remove('nav-active'); b.classList.add('text-white'); });
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('nav-active');
+            btn.classList.remove('text-white');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
